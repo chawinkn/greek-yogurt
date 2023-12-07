@@ -1,0 +1,7 @@
+* {
+  font-family: "Switzer", sans-serif;
+}
+
+::selection {
+  background-color: white;
+}
