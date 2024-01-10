@@ -5,58 +5,151 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    /> -->
     <link
       href="https://api.fontshare.com/v2/css?f[]=switzer@700,400&display=swap"
       rel="stylesheet"
     />
+    <!-- <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,400,700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="bg-purple-300 border">
-      <div class="flex justify-center items-center text-center w-full h-screen">
-        <div
-          class="flex flex-col"
-        >
-          <h1 class="text-8xl font-bold">Greek Yogurt</h1>
-          <p class="sm:text-lg pt-10 sm:pt-8">Recipe & Tutorial</p>
+    <nav class="fixed top-0 w-full px-5 py-3 bg-white shadow-sm">
+      <div class="flex items-center justify-between mx-auto">
+        <div class="flex items-center space-x-4">
+          <p><a href="/">Home</a></p>
+        </div>
+        <div class="flex items-center ml-auto space-x-4">
+          <p><a href="/#about" target="_self">About</a></p>
+          <p><a href="/#recipe" target="_self">Recipe</a></p>
+          <p><a href="/#form" target="_self">Form</a></p>
         </div>
       </div>
-    </div>
-    <div class="bg-purple-500 border">
-      <div class="flex justify-center items-center text-center w-full h-screen">
+    </nav>
+    <section id="home" class="bg-purple-300">
+      <div
+        class="flex flex-col items-center justify-center h-screen text-center"
+      >
+        <img
+          class="max-w-xs mx-auto"
+          src="/images/yogurt_emoji.png"
+          alt="Yogurt Emoji"
+        />
+        <h1 class="pt-10 text-4xl font-bold md:text-5xl">Greek Yogurt</h1>
+        <p class="pt-3 md:text-lg">กรีกโยเกิร์ต</p>
+      </div>
+    </section>
+    <section id="about" class="bg-purple-500">
+      <div class="flex items-center justify-center h-[70vh]">
         <div
-          class="flex flex-col"
+          class="flex flex-col max-w-sm text-center sm:max-w-md md:max-w-2xl"
         >
-          <h1 class="text-8xl font-bold text-white">Recipe</h1>
-          <h1 class="text-8xl font-bold text-black">Recipe</h1>
-          <h1 class="text-8xl font-bold text-white">Recipe</h1>
-          <h1 class="text-8xl font-bold text-black">Recipe</h1>
-          <h1 class="text-8xl font-bold text-white">Recipe</h1>
-          <h1 class="text-8xl font-bold text-black">Recipe</h1>
+          <h1 class="text-4xl font-bold text-white">About</h1>
+          <p class="pt-5 leading-loose text-white md:pt-10 md:text-lg">
+            <span class="text-lg font-medium md:text-2xl">กรีกโยเกิร์ต</span>
+            คือ โยเกิร์ตประเภทหนึ่ง โดยมีส่วนประกอบหลัก คือ นม
+            และแบคทีเรียที่ดีต่อร่างกาย โดยแตกต่างกับโยเกิร์ตทั่วๆ ไป
+            โดยมีความเข้มข้นมากกว่า มีลักษณะจับกันเป็นก้อน เนื่องจากกรีกโยเกิร์ต
+            เกิดจากการกรอง และคั้นหางโยเกิร์ต ซึ่งจะกรองของเหลว และน้ำตาลออก
+            โดยกรีกโยเกิร์ตจะมีโปรตีนมากกว่าโยเกิร์ตทั่วไป
+            ทำให้กรีกโยเกิร์ตดีต่อสุขภาพมากกว่าโยเกิร์ตทั่วไป
+            หากพิจารณาสุขภาพในระยะยาว
+          </p>
         </div>
       </div>
-    </div>
-    <div class="bg-purple-300 border">
-      <div class="flex justify-center items-center text-center w-full h-screen">
-        <div
-          class="flex flex-col"
-        >
-          <h1 class="text-8xl font-bold text-white">Tutorial</h1>
-          <h1 class="text-8xl font-bold text-black">Tutorial</h1>
-          <h1 class="text-8xl font-bold text-white">Tutorial</h1>
-          <h1 class="text-8xl font-bold text-black">Tutorial</h1>
-          <h1 class="text-8xl font-bold text-white">Tutorial</h1>
-          <h1 class="text-8xl font-bold text-black">Tutorial</h1>
+    </section>
+    <section id="recipe" class="bg-purple-300">
+      <div class="flex items-center justify-center py-14">
+        <div class="flex flex-col text-center">
+          <h1 class="text-4xl font-bold">Recipe</h1>
+          <div
+            class="flex flex-col pt-10 space-y-4 md:space-y-0 md:space-x-4 md:flex-row"
+          >
+            <a href="/recipe/1.html">
+              <div
+                class="max-w-xs p-5 overflow-hidden bg-white shadow-sm md:max-w-sm rounded-xl"
+              >
+                <img class="w-full" src="/images/pic1.jpg" alt="Recipe 3" />
+                <p class="pt-5 md:text-lg">Recipe 1</p>
+              </div>
+            </a>
+            <a href="/recipe/2.html">
+              <div
+                class="max-w-xs p-5 overflow-hidden bg-white shadow-sm md:max-w-sm rounded-xl"
+              >
+                <img class="w-full" src="/images/pic1.jpg" alt="Recipe 3" />
+                <p class="pt-5 md:text-lg">Recipe 2</p>
+              </div>
+            </a>
+            <a href="/recipe/3.html">
+              <div
+                class="max-w-xs p-5 overflow-hidden bg-white shadow-sm md:max-w-sm rounded-xl"
+              >
+                <img class="w-full" src="/images/pic1.jpg" alt="Recipe 3" />
+                <p class="pt-5 md:text-lg">Recipe 3</p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="bg-purple-500 border">
-      <div class="flex justify-center items-center text-center w-full h-[100px]">
-        <div
-          class="flex flex-col"
+    </section>
+    <section id="form" class="bg-purple-500">
+      <div class="flex items-center justify-center h-[70vh]">
+        <form
+          class="flex flex-col max-w-sm space-y-4 text-center text-white sm:max-w-md md:max-w-2xl"
         >
-          <h1 class="text-lg font-bold text-white"><a href="#">Back to top</a></h1>
-        </div>
+          <h1 class="text-4xl font-bold">Form</h1>
+          <div class="space-x-1 space-y-4 md:space-x-2">
+            <p class="font-medium text-left md:text-lg">
+              ความสวยงามของเว็ปไซต์
+            </p>
+            <input type="radio" /> <label>ดีมาก</label> <input type="radio" />
+            <label>ดี</label> <input type="radio" /> <label>ปานกลาง</label>
+            <input type="radio" /> <label>พอใช้</label> <input type="radio" />
+            <label>ควรปรับปรุง</label>
+          </div>
+          <div class="space-x-1 space-y-4 md:space-x-2">
+            <p class="font-medium text-left md:text-lg">
+              ความสวยงามของเว็ปไซต์
+            </p>
+            <input type="radio" /> <label>ดีมาก</label> <input type="radio" />
+            <label>ดี</label> <input type="radio" /> <label>ปานกลาง</label>
+            <input type="radio" /> <label>พอใช้</label> <input type="radio" />
+            <label>ควรปรับปรุง</label>
+          </div>
+          <div class="pb-4 space-x-1 space-y-4 md:space-x-2">
+            <p class="font-medium text-left md:text-lg">
+              ความสวยงามของเว็ปไซต์
+            </p>
+            <input type="radio" /> <label>ดีมาก</label> <input type="radio" />
+            <label>ดี</label> <input type="radio" /> <label>ปานกลาง</label>
+            <input type="radio" /> <label>พอใช้</label> <input type="radio" />
+            <label>ควรปรับปรุง</label>
+          </div>
+          <button
+            class="py-2 text-black bg-white rounded-xl md:text-lg"
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+    <div class="px-5 py-3 bg-white shadow-sm">
+      <div class="flex items-center justify-center">
+        <p><a href="#home">Back to top</a></p>
       </div>
     </div>
   </body>
