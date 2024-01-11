@@ -14,3 +14,7 @@
     ),
     hsla(0, 0%, 100%, 0.2);
 }
+
+.bg-yogurt-mid {
+  background-image: url('/images/yogurt-mid.jpg');
+}
