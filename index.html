@@ -9,98 +9,188 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
-    <link href="https://api.fontshare.com/v2/css?f[]=switzer@700,400&display=swap" rel="stylesheet" />
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" /> -->
-    <!-- <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,400,700&display=swap" rel="stylesheet" /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      href="https://api.fontshare.com/v2/css?f[]=switzer@700,400&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,400,700&display=swap"
+      rel="stylesheet"
+    /> -->
     <link rel="stylesheet" href="style.css" />
-
   </head>
 
   <body>
-    <!-- 
-        ปรับ pallete
-    -->
-    <nav class="sticky top-0 w-full px-7 py-5 bg-white shadow-md">
-      <div class="flex items-center justify-between mx-auto">
+    <nav
+      class="fixed top-0 w-full z-50 px-7 lg:px-28 py-5 bg-white/70 backdrop-blur-2xl shadow-md"
+    >
+      <div class="flex items-center justify-between mx-auto font-medium">
         <div class="flex items-center space-x-4">
-          <span class="text-shadow-md"><a href="/#home">Home</a></span>
+          <span class="text-shadow-md hover:text-[#fc5ad6] font-bold"
+            ><a href="/#home">Home</a></span
+          >
         </div>
-
-        <!-- 
-          ทำให้ hover สวย
-          ปรับให้เข้ากับ pallete
-        -->
-        <div class="flex items-center ml-auto space-x-4">
-          <span><a href="/#about" target="_self">About</a></span>
-          <span><a href="/#recipe" target="_self">Recipe</a></span>
-          <span><a href="/#form" target="_self">Form</a></span>
+        <div class="flex items-center ml-auto space-x-4 md:space-x-8">
+          <span class="link-underline link-underline-black hover:text-[#fc5ad6]"
+            ><a href="/#about" target="_self">About</a></span
+          >
+          <span class="link-underline link-underline-black hover:text-[#fc5ad6]"
+            ><a href="/#recipe" target="_self">Recipe</a></span
+          >
+          <span class="link-underline link-underline-black hover:text-[#fc5ad6]"
+            ><a href="/#form" target="_self">Form</a></span
+          >
         </div>
       </div>
     </nav>
 
-    <section id="home" class="bg-gradient-to-r from-purple-200 to-pink-200">
-      <div class="align-middle flex flex-row items-center justify-center h-screen">
-
-        <div class="basis-7/12 text-center"><h1 class="text-6xl transition-all ease hover:text-7xl">Greek Yogurt 🥣</h1></div>
-        <div class="flex-auto h-full bg-yogurt-mid bg-center bg-cover bg-no-repeat"></div>
-
-        <!-- ยังขาดอะไรไม่รุ้ -->
+    <section id="home" class="bg-gradient-to-r from-pink-200 to-purple-200">
+      <div
+        class="align-middle flex flex-row items-center justify-center h-screen"
+      >
+        <div class="basis-7/12 text-center">
+          <h1
+            class="text-6xl transition-all ease hover:text-7xl font-bold hover:text-[#f2c]"
+          >
+            Greek Yogurt 🥣
+          </h1>
+        </div>
+        <div
+          class="flex-auto h-full bg-yogurt-mid bg-center bg-cover bg-no-repeat"
+        ></div>
       </div>
     </section>
 
-    <section id="about" class="bg-gradient-to-br from-pink-200 to-purple-300">
-      <!-- 
-        อธิบายหลาย div แบบมีรูปซัก div นึง
-        text สลับซ้ายขวา แต่อยู่ตรงกลาง เหมือน vercel
-       -->
-      <div class="flex items-center justify-center h-[70vh]">
+    <section id="about" class="bg-gradient-to-r from-purple-400 to-[#6300aa]">
+      <div class="flex items-center justify-center h-screen">
         <div
-          class="flex flex-col max-w-sm text-center sm:max-w-md md:max-w-2xl text-black"
+          class="flex flex-col max-w-sm text-center sm:max-w-md md:max-w-3xl text-white"
         >
-          <p class="pt-5 leading-loose md:pt-10 md:text-lg">
-            <span class="text-xl font-medium md:text-2xl">กรีกโยเกิร์ต</span>
-            คือ โยเกิร์ตที่มีความเข้มข้นมากกว่าโยเกิร์ตทั่วๆ ไป เนื่องจากกรีกโยเกิร์ต
-            เกิดจากการกรอง และคั้นหางโยเกิร์ต ซึ่งจะกรองของเหลว และน้ำตาลออก
+          <p class="pt-5 leading-loose md:pt-10 text-lg md:text-2xl">
+            <!-- <span class="text-2xl font-medium md:text-4xl">กรีกโยเกิร์ต</span> -->
+            <span class="text-2xl md:text-4xl transition-all ease hover:text-4xl md:hover:text-6xl font-bold">
+              กรีกโยเกิร์ต
+            </span>
+            คือ โยเกิร์ตที่มีความเข้มข้นมากกว่าโยเกิร์ตทั่วๆ ไป
+            เนื่องจากกรีกโยเกิร์ต เกิดจากการกรอง และคั้นหางโยเกิร์ต
+            ซึ่งจะกรองของเหลว และน้ำตาลออก
             ทำให้กรีกโยเกิร์ตดีต่อสุขภาพมากกว่าโยเกิร์ตทั่วไป
           </p>
+          <div class="flex flex-col items-center">
+            <img
+              class="rounded-xl mt-5 md:mt-10 md:max-w-xl shadow-md hover:scale-105 transition-all ease"
+              src="/images/greek-yogurt-vs-ordinary-yogurt.jpg"
+            />
+            <p class="text-sm md:text-base pt-4">
+              กรีกโยเกิร์ต vs โยเกิร์ตทั่วไป
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="recipe" class="bg-purple-300">
+    <section id="recipe" class="bg-gradient-to-r from-pink-200 to-purple-200">
       <!-- ใส่ hover
         ปรับ card
         ใส่ description หน่อย ๆ ว่าทำไมต้องเลือก recipe นี้
       -->
-      <div class="flex items-center justify-center py-14">
+      <div class="flex items-center justify-center py-14 md:py-10 min-h-screen">
         <div class="flex flex-col text-center">
-          <h1 class="text-4xl font-bold">Recipe</h1>
+          <h1
+            class="text-4xl transition-all ease hover:text-5xl font-bold hover:text-[#f2c] mb-10"
+          >
+            Recipe
+          </h1>
           <div
-            class="flex flex-col pt-10 space-y-4 md:space-y-0 md:space-x-4 md:flex-row"
+            class="flex flex-col space-y-8 lg:space-y-0 lg:space-x-8 lg:flex-row"
           >
             <a href="/recipe/1.html">
               <div
-                class="max-w-xs p-5 overflow-hidden bg-white shadow-sm md:max-w-sm rounded-xl"
+                class="max-w-sm rounded-xl overflow-hidden shadow-md bg-white hover:scale-105 transition-all ease"
               >
-                <img class="w-full" src="/images/pic1.jpg" alt="Recipe 3" />
-                <p class="pt-5 md:text-lg">Recipe 1</p>
+                <img class="w-full" src="/images/pic1.jpg" alt="Recipe 1" />
+                <div class="px-6 py-4">
+                  <div class="font-bold text-2xl mb-2">Ing Yogurt</div>
+                  <p class="text-gray-700 text-lg">
+                    สูตรจากไอน้อง 5/6 (Official)
+                  </p>
+                </div>
+                <div class="px-6 pt-4 pb-2">
+                  <span
+                    class="inline-block bg-green-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2"
+                    >#ทำง่าย</span
+                  >
+                  <span
+                    class="inline-block bg-yellow-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2"
+                    >#ทำนาน</span
+                  >
+                  <span
+                    class="inline-block bg-red-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2"
+                    >#ไม่ต้องแดก</span
+                  >
+                </div>
               </div>
             </a>
             <a href="/recipe/2.html">
               <div
-                class="max-w-xs p-5 overflow-hidden bg-white shadow-sm md:max-w-sm rounded-xl"
+                class="max-w-sm rounded-xl overflow-hidden shadow-md bg-white hover:scale-110 transition-all ease"
               >
-                <img class="w-full" src="/images/pic1.jpg" alt="Recipe 3" />
-                <p class="pt-5 md:text-lg">Recipe 2</p>
+                <img class="w-full" src="/images/pic1.jpg" alt="Recipe 1" />
+                <div class="px-6 py-4">
+                  <div class="font-bold text-2xl mb-2">Ing Yogurt</div>
+                  <p class="text-gray-700 text-lg">
+                    สูตรจากไอน้อง 5/6 (Official)
+                  </p>
+                </div>
+                <div class="px-6 pt-4 pb-2">
+                  <span
+                    class="inline-block bg-green-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2"
+                    >#ทำง่าย</span
+                  >
+                  <span
+                    class="inline-block bg-yellow-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2"
+                    >#ทำนาน</span
+                  >
+                  <span
+                    class="inline-block bg-red-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2"
+                    >#ไม่ต้องแดก</span
+                  >
+                </div>
               </div>
             </a>
             <a href="/recipe/3.html">
               <div
-                class="max-w-xs p-5 overflow-hidden bg-white shadow-sm md:max-w-sm rounded-xl"
+                class="max-w-sm rounded-xl overflow-hidden shadow-md bg-white hover:scale-110 transition-all ease"
               >
-                <img class="w-full" src="/images/pic1.jpg" alt="Recipe 3" />
-                <p class="pt-5 md:text-lg">Recipe 3</p>
+                <img class="w-full" src="/images/pic1.jpg" alt="Recipe 1" />
+                <div class="px-6 py-4">
+                  <div class="font-bold text-2xl mb-2">Ing Yogurt</div>
+                  <p class="text-gray-700 text-lg">
+                    สูตรจากไอน้อง 5/6 (Official)
+                  </p>
+                </div>
+                <div class="px-6 pt-4 pb-2">
+                  <span
+                    class="inline-block bg-green-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2"
+                    >#ทำง่าย</span
+                  >
+                  <span
+                    class="inline-block bg-yellow-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2"
+                    >#ทำนาน</span
+                  >
+                  <span
+                    class="inline-block bg-red-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2"
+                    >#ไม่ต้องแดก</span
+                  >
+                </div>
               </div>
             </a>
           </div>
@@ -108,56 +198,87 @@
       </div>
     </section>
 
-    <section id="form" class="bg-purple-500">
+    <section id="form" class="bg-gradient-to-r from-purple-400 to-[#6300aa]">
       <!-- 
         ฟอร์มเอ๋อ ฉห
         ทำใหม่ดีกว่า
        -->
-      <div class="flex items-center justify-center h-[70vh]">
+      <div class="flex items-center justify-center h-screen">
         <form
           class="flex flex-col max-w-sm space-y-4 text-center text-white sm:max-w-md md:max-w-2xl"
         >
-          <h1 class="text-4xl font-bold">Form</h1>
-          <div class="space-x-1 space-y-4 md:space-x-2">
-            <p class="font-medium text-left md:text-lg">
+          <h1
+            class="text-4xl transition-all ease hover:text-5xl font-bold mb-5 md:mb-10"
+          >
+            Form
+          </h1>
+          <div class="space-x-1 space-y-5 md:space-x-2 text-lg">
+            <p class="font-medium text-left text-xl">
               ความสวยงามของเว็ปไซต์
             </p>
-            <input type="radio" /> <label>ดีมาก</label> <input type="radio" />
-            <label>ดี</label> <input type="radio" /> <label>ปานกลาง</label>
-            <input type="radio" /> <label>พอใช้</label> <input type="radio" />
-            <label>ควรปรับปรุง</label>
+            <input id="q1-5" class="w-4 h-4 accent-pink-500" type="radio" name="q1" value="5" required/> 
+            <label for="q1-5">ดีมาก</label>
+
+            <input id="q1-4" class="w-4 h-4 accent-pink-500" type="radio" name="q1" value="4" required/>
+            <label for="q1-4">ดี</label>
+            
+            <input id="q1-3" class="w-4 h-4 accent-pink-500" type="radio" name="q1" value="3" required/> 
+            <label for="q1-3">ปานกลาง</label>
+
+            <input id="q1-2" class="w-4 h-4 accent-pink-500" type="radio" name="q1" value="2" required/> 
+            <label for="q1-2">พอใช้</label> 
+
+            <input id="q1-1" class="w-4 h-4 accent-pink-500" type="radio" name="q1" value="1" required/>
+            <label for="q1-1">ควรปรับปรุง</label>
           </div>
-          <div class="space-x-1 space-y-4 md:space-x-2">
-            <p class="font-medium text-left md:text-lg">
-              ความสวยงามของเว็ปไซต์
+          <div class="space-x-1 space-y-5 md:space-x-2 text-lg">
+            <p class="font-medium text-left text-xl">
+              ประสบการณ์ของผู้ใช้เว็ปไซต์
             </p>
-            <input type="radio" /> <label>ดีมาก</label> <input type="radio" />
-            <label>ดี</label> <input type="radio" /> <label>ปานกลาง</label>
-            <input type="radio" /> <label>พอใช้</label> <input type="radio" />
-            <label>ควรปรับปรุง</label>
+            <input id="q2-5" class="w-4 h-4 accent-pink-500" type="radio" name="q2" value="5" required/> 
+            <label for="q2-5">ดีมาก</label> 
+            
+            <input id="q2-4" class="w-4 h-4 accent-pink-500" type="radio" name="q2" value="4" required/>
+            <label for="q2-4">ดี</label>
+            
+            <input id="q2-3" class="w-4 h-4 accent-pink-500" type="radio" name="q2" value="3" required/> 
+            <label for="q2-3">ปานกลาง</label>
+            
+            <input id="q2-2" class="w-4 h-4 accent-pink-500" type="radio" name="q2" value="2" required/> 
+            <label for="q2-2">พอใช้</label> 
+            
+            <input id="q2-1" class="w-4 h-4 accent-pink-500" type="radio" name="q2" value="1" required/>
+            <label for="q2-1">ควรปรับปรุง</label>
           </div>
-          <div class="pb-4 space-x-1 space-y-4 md:space-x-2">
-            <p class="font-medium text-left md:text-lg">
-              ความสวยงามของเว็ปไซต์
+          <div class="space-x-1 space-y-5 md:space-x-2 text-lg">
+            <p class="font-medium text-left text-xl">
+              ความเข้าใจของเนื้อหา
             </p>
-            <input type="radio" /> <label>ดีมาก</label> <input type="radio" />
-            <label>ดี</label> <input type="radio" /> <label>ปานกลาง</label>
-            <input type="radio" /> <label>พอใช้</label> <input id="ac" type="radio" />
-            <label for="ac">ควรปรับปรุง</label>
+            <input id="q3-5" class="w-4 h-4 accent-pink-500" type="radio" name="q3" value="5" required/> 
+            <label for="q3-5">ดีมาก</label> 
+            
+            <input id="q3-4" class="w-4 h-4 accent-pink-500" type="radio" name="q3" value="4" required/>
+            <label for="q3-4">ดี</label>
+            
+            <input id="q3-3" class="w-4 h-4 accent-pink-500" type="radio" name="q3" value="3" required/> 
+            <label for="q3-3">ปานกลาง</label>
+
+            <input id="q3-2" class="w-4 h-4 accent-pink-500" type="radio" name="q3" value="2" required/> 
+            <label for="q3-2">พอใช้</label> 
+
+            <input id="q3-1" class="w-4 h-4 accent-pink-500" type="radio" name="q3" value="1" required/>
+            <label for="q3-1">ควรปรับปรุง</label>
           </div>
           <button
-            class="py-2 text-black bg-white rounded-xl md:text-lg"
+            id="btn"
+            class="py-2 text-black bg-white rounded-xl md:text-lg hover:text-[#f2c] font-medium"
             type="submit"
           >
             Submit
           </button>
-        </form>
-      </div>
+        </div>
+      </form>
     </section>
-    <div class="px-5 py-3 bg-white shadow-sm">
-      <div class="flex items-center justify-center">
-        <span><a href="#home">Back to top</a></span>
-      </div>
-    </div>
+    <script src="script.js"></script>
   </body>
 </html>

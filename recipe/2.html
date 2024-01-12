@@ -26,15 +26,25 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <nav class="fixed top-0 w-full px-5 py-3 bg-white shadow-sm">
-      <div class="flex items-center justify-between mx-auto">
+    <nav
+      class="fixed top-0 w-full z-50 px-7 lg:px-28 py-5 bg-white/70 backdrop-blur-2xl shadow-md"
+    >
+      <div class="flex items-center justify-between mx-auto font-medium">
         <div class="flex items-center space-x-4">
-          <p><a href="/">Home</a></p>
+          <span class="text-shadow-md hover:text-[#fc5ad6] font-bold"
+            ><a href="/#home">Home</a></span
+          >
         </div>
-        <div class="flex items-center ml-auto space-x-4">
-          <p><a href="/#about" target="_self">About</a></p>
-          <p><a href="/#recipe" target="_self">Recipe</a></p>
-          <p><a href="/#form" target="_self">Form</a></p>
+        <div class="flex items-center ml-auto space-x-4 md:space-x-8">
+          <span class="link-underline link-underline-black hover:text-[#fc5ad6]"
+            ><a href="/#about" target="_self">About</a></span
+          >
+          <span class="link-underline link-underline-black hover:text-[#fc5ad6]"
+            ><a href="/#recipe" target="_self">Recipe</a></span
+          >
+          <span class="link-underline link-underline-black hover:text-[#fc5ad6]"
+            ><a href="/#form" target="_self">Form</a></span
+          >
         </div>
       </div>
     </nav>
@@ -55,10 +65,5 @@
         </div>
       </div>
     </section>
-    <div class="px-5 py-3 bg-white shadow-sm">
-      <div class="flex items-center justify-center">
-        <p><a href="#recipe">Back to top</a></p>
-      </div>
-    </div>
   </body>
 </html>

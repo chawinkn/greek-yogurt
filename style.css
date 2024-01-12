@@ -1,5 +1,5 @@
 * {
-  font-family: "Switzer", "Noto Sans Thai", sans-serif;
+font-family: "Inter", "Noto Sans Thai", sans-serif;
 }
 
 ::selection {
@@ -16,5 +16,25 @@
 }
 
 .bg-yogurt-mid {
-  background-image: url('/images/yogurt-mid.jpg');
+  background-image: url("/images/yogurt-mid.jpg");
+}
+
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#fff, #fff);
+  background-size: 0 2px;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease-in-out;
+}
+
+.link-underline-black {
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#f2c, #f2c);
+}
+
+.link-underline:hover {
+  background-size: 100% 2px;
+  background-position: 0 100%;
 }
