@@ -13,24 +13,16 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <!-- <link
-      href="https://api.fontshare.com/v2/css?f[]=switzer@700,400&display=swap"
-      rel="stylesheet"
-    /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <!-- <link
-      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,400,700&display=swap"
-      rel="stylesheet"
-    /> -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
 
   <body>
     <nav
-      class="fixed top-0 w-full z-50 px-7 lg:px-28 py-5 bg-white/70 backdrop-blur-2xl shadow-md"
+      class="fixed top-0 z-50 w-full py-5 shadow-md px-7 lg:px-28 bg-white/80 backdrop-blur-lg"
     >
       <div class="flex items-center justify-between mx-auto font-medium">
         <div class="flex items-center space-x-4">
@@ -54,42 +46,47 @@
 
     <section id="home" class="bg-gradient-to-r from-pink-200 to-purple-200">
       <div
-        class="align-middle flex flex-row items-center justify-center h-screen"
+        class="flex flex-row items-center justify-center h-screen align-middle"
       >
-        <div class="basis-7/12 text-center">
+        <div class="text-center basis-7/12">
           <h1
-            class="text-6xl transition-all ease hover:text-7xl font-bold hover:text-[#f2c]"
+            class="text-6xl transition-all ease hover:scale-110 font-bold hover:text-[#f2c]"
           >
-            Greek Yogurt 🥣
+            Greek Yogurt
+            <span class="flex flex-col mt-2">🥣</span>
           </h1>
         </div>
         <div
-          class="flex-auto h-full bg-yogurt-mid bg-center bg-cover bg-no-repeat"
+          class="flex-auto h-full bg-center bg-no-repeat bg-cover bg-[url('/images/yogurt-mid.jpg')]"
         ></div>
       </div>
     </section>
 
-    <section id="about" class="bg-gradient-to-r from-purple-400 to-[#6300aa]">
-      <div class="flex items-center justify-center h-screen">
+    <section id="about" class="bg-gradient-to-r from-purple-400 to-violet-600">
+      <div class="flex items-center justify-center min-h-screen">
         <div
-          class="flex flex-col max-w-sm text-center sm:max-w-md md:max-w-3xl text-white"
+          class="flex flex-col max-w-sm px-5 py-10 text-center text-white sm:max-w-md md:max-w-3xl"
         >
-          <p class="pt-5 leading-loose md:pt-10 text-lg md:text-2xl">
-            <!-- <span class="text-2xl font-medium md:text-4xl">กรีกโยเกิร์ต</span> -->
-            <span class="text-2xl md:text-4xl transition-all ease hover:text-4xl md:hover:text-6xl font-bold">
+          <p class="pt-5 text-lg leading-loose md:pt-10 md:text-2xl">
+            <span
+              class="text-2xl font-bold transition-all md:text-3xl ease hover:text-4xl md:hover:text-5xl"
+            >
               กรีกโยเกิร์ต
             </span>
-            คือ โยเกิร์ตที่มีความเข้มข้นมากกว่าโยเกิร์ตทั่วๆ ไป
-            เนื่องจากกรีกโยเกิร์ต เกิดจากการกรอง และคั้นหางโยเกิร์ต
-            ซึ่งจะกรองของเหลว และน้ำตาลออก
+            คือ โยเกิร์ตประเภทหนึ่ง โดยมีส่วนประกอบหลัก คือ นม
+            และแบคทีเรียที่ดีต่อร่างกาย โดยแตกต่างกับโยเกิร์ตทั่วๆไป
+            โดยมีความเข้มข้นมากกว่า มีลักษณะจับกันเป็นก้อน เนื่องจากกรีกโยเกิร์ต
+            เกิดจากการกรอง และคั้นหางโยเกิร์ต ซึ่งจะกรองของเหลว และน้ำตาลออก
+            โดยกรีกโยเกิร์ตจะมีโปรตีนมากกว่าโยเกิร์ตทั่วไป
             ทำให้กรีกโยเกิร์ตดีต่อสุขภาพมากกว่าโยเกิร์ตทั่วไป
+            หากพิจารณสุขภาพในระยะยาว
           </p>
           <div class="flex flex-col items-center">
             <img
-              class="rounded-xl mt-5 md:mt-10 md:max-w-xl shadow-md hover:scale-105 transition-all ease"
+              class="max-w-sm mt-5 transition-all shadow-md rounded-xl md:mt-10 sm:max-w-md md:max-w-xl hover:scale-110 ease"
               src="/images/greek-yogurt-vs-ordinary-yogurt.jpg"
             />
-            <p class="text-sm md:text-base pt-4">
+            <p class="pt-4 text-sm md:text-base">
               กรีกโยเกิร์ต vs โยเกิร์ตทั่วไป
             </p>
           </div>
@@ -98,97 +95,85 @@
     </section>
 
     <section id="recipe" class="bg-gradient-to-r from-pink-200 to-purple-200">
-      <!-- ใส่ hover
-        ปรับ card
-        ใส่ description หน่อย ๆ ว่าทำไมต้องเลือก recipe นี้
-      -->
-      <div class="flex items-center justify-center py-14 md:py-10 min-h-screen">
+      <div class="flex items-center justify-center min-h-screen py-14 md:py-10">
         <div class="flex flex-col text-center">
           <h1
-            class="text-4xl transition-all ease hover:text-5xl font-bold hover:text-[#f2c] mb-10"
+            class="text-4xl transition-all ease hover:scale-110 font-bold hover:text-[#f2c] mb-10"
           >
             Recipe
           </h1>
           <div
-            class="flex flex-col space-y-8 lg:space-y-0 lg:space-x-8 lg:flex-row"
+            class="flex flex-col px-10 space-y-8 lg:space-y-0 lg:space-x-8 lg:flex-row"
           >
             <a href="/recipe/1.html">
               <div
-                class="max-w-sm rounded-xl overflow-hidden shadow-md bg-white hover:scale-105 transition-all ease"
+                class="max-w-xs overflow-hidden transition-all h-[70vh] bg-white shadow-md rounded-xl hover:scale-105 ease"
               >
-                <img class="w-full" src="/images/pic1.jpg" alt="Recipe 1" />
+                <img
+                  class="object-cover w-full h-[35vh]"
+                  src="/images/5-6-yogurt.jpg"
+                  alt="Recipe 1"
+                />
                 <div class="px-6 py-4">
-                  <div class="font-bold text-2xl mb-2">Ing Yogurt</div>
-                  <p class="text-gray-700 text-lg">
-                    สูตรจากไอน้อง 5/6 (Official)
+                  <div class="mb-2 text-2xl font-bold">5/6 Greek Yogurt</div>
+                  <p class="text-lg text-gray-700">
+                    กรีกโยเกิร์ตจากกลุ่มสาระการเรียนรู้การงานอาชีพ 5/6
                   </p>
                 </div>
-                <div class="px-6 pt-4 pb-2">
+                <div class="px-6 pb-2">
                   <span
-                    class="inline-block bg-green-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2"
-                    >#ทำง่าย</span
+                    class="inline-block px-3 py-1 mb-2 mr-2 font-semibold text-gray-700 bg-green-200 rounded-full"
+                    >✅ Official</span
                   >
                   <span
-                    class="inline-block bg-yellow-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2"
-                    >#ทำนาน</span
-                  >
-                  <span
-                    class="inline-block bg-red-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2"
-                    >#ไม่ต้องแดก</span
+                    class="inline-block px-3 py-1 mb-2 mr-2 font-semibold text-gray-700 bg-yellow-100 rounded-full"
+                    >⏰ 19-20 hrs</span
                   >
                 </div>
               </div>
             </a>
             <a href="/recipe/2.html">
               <div
-                class="max-w-sm rounded-xl overflow-hidden shadow-md bg-white hover:scale-110 transition-all ease"
+                class="max-w-xs overflow-hidden h-[70vh] transition-all bg-white shadow-md rounded-xl hover:scale-105 ease"
               >
-                <img class="w-full" src="/images/pic1.jpg" alt="Recipe 1" />
+                <img
+                  class="object-cover w-full h-[35vh]"
+                  src="/images/homemade1.jpg"
+                  alt="Recipe 2"
+                />
                 <div class="px-6 py-4">
-                  <div class="font-bold text-2xl mb-2">Ing Yogurt</div>
-                  <p class="text-gray-700 text-lg">
-                    สูตรจากไอน้อง 5/6 (Official)
+                  <div class="mb-2 text-2xl font-bold">Homemade #1</div>
+                  <p class="text-lg text-gray-700">
+                    ทำได้ที่บ้านง่ายๆ ใช้เวลาตามความข้นที่ต้องการ
                   </p>
                 </div>
-                <div class="px-6 pt-4 pb-2">
+                <div class="px-6 pb-2">
                   <span
-                    class="inline-block bg-green-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2"
-                    >#ทำง่าย</span
-                  >
-                  <span
-                    class="inline-block bg-yellow-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2"
-                    >#ทำนาน</span
-                  >
-                  <span
-                    class="inline-block bg-red-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2"
-                    >#ไม่ต้องแดก</span
+                    class="inline-block px-3 py-1 mb-2 mr-2 font-semibold text-gray-700 bg-yellow-100 rounded-full"
+                    >⏰ 18-38 hrs</span
                   >
                 </div>
               </div>
             </a>
             <a href="/recipe/3.html">
               <div
-                class="max-w-sm rounded-xl overflow-hidden shadow-md bg-white hover:scale-110 transition-all ease"
+                class="max-w-xs overflow-hidden transition-all h-[70vh] bg-white shadow-md rounded-xl hover:scale-105 ease"
               >
-                <img class="w-full" src="/images/pic1.jpg" alt="Recipe 1" />
+                <img
+                  class="object-cover w-full h-[35vh]"
+                  src="/images/homemade2.jpg"
+                  alt="Recipe 3"
+                />
                 <div class="px-6 py-4">
-                  <div class="font-bold text-2xl mb-2">Ing Yogurt</div>
-                  <p class="text-gray-700 text-lg">
-                    สูตรจากไอน้อง 5/6 (Official)
+                  <div class="mb-2 text-2xl font-bold">Homemade #2</div>
+                  <p class="text-lg text-gray-700">
+                    ทำได้ที่บ้านง่ายๆ ใช้เวลาตามความข้นที่ต้องการ
                   </p>
                 </div>
-                <div class="px-6 pt-4 pb-2">
+                <div class="px-6 pb-2">
                   <span
-                    class="inline-block bg-green-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2"
-                    >#ทำง่าย</span
-                  >
-                  <span
-                    class="inline-block bg-yellow-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2"
-                    >#ทำนาน</span
-                  >
-                  <span
-                    class="inline-block bg-red-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2"
-                    >#ไม่ต้องแดก</span
+                    class="inline-block px-3 py-1 mb-2 mr-2 font-semibold text-gray-700 bg-yellow-100 rounded-full"
+                    >⏰ 4-16 hrs</span
                   >
                 </div>
               </div>
@@ -198,86 +183,326 @@
       </div>
     </section>
 
-    <section id="form" class="bg-gradient-to-r from-purple-400 to-[#6300aa]">
-      <!-- 
-        ฟอร์มเอ๋อ ฉห
-        ทำใหม่ดีกว่า
-       -->
-      <div class="flex items-center justify-center h-screen">
-        <form
-          class="flex flex-col max-w-sm space-y-4 text-center text-white sm:max-w-md md:max-w-2xl"
-        >
-          <h1
-            class="text-4xl transition-all ease hover:text-5xl font-bold mb-5 md:mb-10"
-          >
-            Form
-          </h1>
-          <div class="space-x-1 space-y-5 md:space-x-2 text-lg">
-            <p class="font-medium text-left text-xl">
-              ความสวยงามของเว็ปไซต์
-            </p>
-            <input id="q1-5" class="w-4 h-4 accent-pink-500" type="radio" name="q1" value="5" required/> 
-            <label for="q1-5">ดีมาก</label>
-
-            <input id="q1-4" class="w-4 h-4 accent-pink-500" type="radio" name="q1" value="4" required/>
-            <label for="q1-4">ดี</label>
-            
-            <input id="q1-3" class="w-4 h-4 accent-pink-500" type="radio" name="q1" value="3" required/> 
-            <label for="q1-3">ปานกลาง</label>
-
-            <input id="q1-2" class="w-4 h-4 accent-pink-500" type="radio" name="q1" value="2" required/> 
-            <label for="q1-2">พอใช้</label> 
-
-            <input id="q1-1" class="w-4 h-4 accent-pink-500" type="radio" name="q1" value="1" required/>
-            <label for="q1-1">ควรปรับปรุง</label>
+    <section id="form" class="bg-gradient-to-r from-purple-400 to-violet-600">
+      <div class="flex items-center justify-center min-h-screen py-14">
+        <div class="flex flex-col text-center">
+          <div class="flex flex-col">
+            <form
+              class="py-6 bg-white shadow-md px-14 rounded-xl"
+              onsubmit="submitForm(event)"
+            >
+              <h1
+                class="text-4xl font-bold transition-all ease hover:scale-110 hover:text-[#f2c]"
+              >
+                Form
+              </h1>
+              <div class="container mx-auto">
+                <div class="p-3">
+                  <h1 class="mb-1 text-2xl font-medium">
+                    ความสวยงามของเว็บไซต์
+                  </h1>
+                  <p class="mb-4 text-sm text-gray-700 md:text-base">
+                    การจัดองค์ประกอบ, การใช้สี
+                  </p>
+                  <div
+                    class="grid grid-cols-1 gap-2 text-lg lg:grid lg:grid-cols-5"
+                  >
+                    <div
+                      class="flex items-center p-2 border rounded-lg shadow-sm cursor-pointer hover:shadow-md"
+                    >
+                      <input
+                        id="q1-5"
+                        name="q1"
+                        class="w-6 h-6 cursor-pointer accent-pink-500"
+                        type="radio"
+                        value="ดีมาก"
+                        required
+                      />
+                      <label
+                        for="q1-5"
+                        class="w-full ml-2 text-left cursor-pointer"
+                        >ดีมาก</label
+                      >
+                    </div>
+                    <div
+                      class="flex items-center p-2 border rounded-lg shadow-sm cursor-pointer hover:shadow-md"
+                    >
+                      <input
+                        id="q1-4"
+                        name="q1"
+                        class="w-6 h-6 cursor-pointer accent-pink-500"
+                        type="radio"
+                        value="ดี"
+                        required
+                      />
+                      <label
+                        for="q1-4"
+                        class="w-full ml-2 text-left cursor-pointer"
+                        >ดี</label
+                      >
+                    </div>
+                    <div
+                      class="flex items-center p-2 border rounded-lg shadow-sm cursor-pointer hover:shadow-md"
+                    >
+                      <input
+                        id="q1-3"
+                        name="q1"
+                        class="w-6 h-6 cursor-pointer accent-pink-500"
+                        type="radio"
+                        value="ปานกลาง"
+                        required
+                      />
+                      <label
+                        for="q1-3"
+                        class="w-full ml-2 text-left cursor-pointer"
+                        >ปานกลาง</label
+                      >
+                    </div>
+                    <div
+                      class="flex items-center p-2 border rounded-lg shadow-sm cursor-pointer hover:shadow-md"
+                    >
+                      <input
+                        id="q1-2"
+                        name="q1"
+                        class="w-6 h-6 cursor-pointer accent-pink-500"
+                        type="radio"
+                        value="พอใช้"
+                        required
+                      />
+                      <label
+                        for="q1-2"
+                        class="w-full ml-2 text-left cursor-pointer"
+                        >พอใช้</label
+                      >
+                    </div>
+                    <div
+                      class="flex items-center p-2 border rounded-lg shadow-sm cursor-pointer hover:shadow-md"
+                    >
+                      <input
+                        id="q1-1"
+                        name="q1"
+                        class="w-6 h-6 cursor-pointer accent-pink-500"
+                        type="radio"
+                        value="ควรปรับปรุง"
+                        required
+                      />
+                      <label
+                        for="q1-1"
+                        class="w-full ml-2 text-left cursor-pointer"
+                        >ควรปรับปรุง</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container mx-auto">
+                <div class="p-3">
+                  <h1 class="mb-1 text-2xl font-medium">
+                    ประสบการณ์ของผู้ใช้เว็บไซต์
+                  </h1>
+                  <p class="mb-4 text-sm text-gray-700 md:text-base">
+                    ความใช้งานง่าย, ความสนุกสนาน
+                  </p>
+                  <div
+                    class="grid grid-cols-1 gap-2 text-lg lg:grid lg:grid-cols-5"
+                  >
+                    <div
+                      class="flex items-center p-2 border rounded-lg shadow-sm cursor-pointer hover:shadow-md"
+                    >
+                      <input
+                        id="q2-5"
+                        name="q2"
+                        class="w-6 h-6 cursor-pointer accent-pink-500"
+                        type="radio"
+                        value="ดีมาก"
+                        required
+                      />
+                      <label
+                        for="q2-5"
+                        class="w-full ml-2 text-left cursor-pointer"
+                        >ดีมาก</label
+                      >
+                    </div>
+                    <div
+                      class="flex items-center p-2 border rounded-lg shadow-sm cursor-pointer hover:shadow-md"
+                    >
+                      <input
+                        id="q2-4"
+                        name="q2"
+                        class="w-6 h-6 cursor-pointer accent-pink-500"
+                        type="radio"
+                        value="ดี"
+                        required
+                      />
+                      <label
+                        for="q2-4"
+                        class="w-full ml-2 text-left cursor-pointer"
+                        >ดี</label
+                      >
+                    </div>
+                    <div
+                      class="flex items-center p-2 border rounded-lg shadow-sm cursor-pointer hover:shadow-md"
+                    >
+                      <input
+                        id="q2-3"
+                        name="q2"
+                        class="w-6 h-6 cursor-pointer accent-pink-500"
+                        type="radio"
+                        value="ปานกลาง"
+                        required
+                      />
+                      <label
+                        for="q2-3"
+                        class="w-full ml-2 text-left cursor-pointer"
+                        >ปานกลาง</label
+                      >
+                    </div>
+                    <div
+                      class="flex items-center p-2 border rounded-lg shadow-sm cursor-pointer hover:shadow-md"
+                    >
+                      <input
+                        id="q2-2"
+                        name="q2"
+                        class="w-6 h-6 cursor-pointer accent-pink-500"
+                        type="radio"
+                        value="พอใช้"
+                        required
+                      />
+                      <label
+                        for="q2-2"
+                        class="w-full ml-2 text-left cursor-pointer"
+                        >พอใช้</label
+                      >
+                    </div>
+                    <div
+                      class="flex items-center p-2 border rounded-lg shadow-sm cursor-pointer hover:shadow-md"
+                    >
+                      <input
+                        id="q2-1"
+                        name="q2"
+                        class="w-6 h-6 cursor-pointer accent-pink-500"
+                        type="radio"
+                        value="ควรปรับปรุง"
+                        required
+                      />
+                      <label
+                        for="q2-1"
+                        class="w-full ml-2 text-left cursor-pointer"
+                        >ควรปรับปรุง</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container mx-auto">
+                <div class="p-3">
+                  <h1 class="mb-1 text-2xl font-medium">
+                    ความเข้าใจของเนื้อหา
+                  </h1>
+                  <p class="mb-4 text-sm text-gray-700 md:text-base">
+                    เนื้อหาเข้าใจง่าย, เนื้อหามีรายละเอียดครบถ้วน
+                  </p>
+                  <div
+                    class="grid grid-cols-1 gap-2 text-lg lg:grid lg:grid-cols-5"
+                  >
+                    <div
+                      class="flex items-center p-2 border rounded-lg shadow-sm cursor-pointer hover:shadow-md"
+                    >
+                      <input
+                        id="q3-5"
+                        name="q3"
+                        class="w-6 h-6 cursor-pointer accent-pink-500"
+                        type="radio"
+                        value="ดีมาก"
+                        required
+                      />
+                      <label
+                        for="q3-5"
+                        class="w-full ml-2 text-left cursor-pointer"
+                        >ดีมาก</label
+                      >
+                    </div>
+                    <div
+                      class="flex items-center p-2 border rounded-lg shadow-sm cursor-pointer hover:shadow-md"
+                    >
+                      <input
+                        id="q3-4"
+                        name="q3"
+                        class="w-6 h-6 cursor-pointer accent-pink-500"
+                        type="radio"
+                        value="ดี"
+                        required
+                      />
+                      <label
+                        for="q3-4"
+                        class="w-full ml-2 text-left cursor-pointer"
+                        >ดี</label
+                      >
+                    </div>
+                    <div
+                      class="flex items-center p-2 border rounded-lg shadow-sm cursor-pointer hover:shadow-md"
+                    >
+                      <input
+                        id="q3-3"
+                        name="q3"
+                        class="w-6 h-6 cursor-pointer accent-pink-500"
+                        type="radio"
+                        value="ปานกลาง"
+                        required
+                      />
+                      <label
+                        for="q3-3"
+                        class="w-full ml-2 text-left cursor-pointer"
+                        >ปานกลาง</label
+                      >
+                    </div>
+                    <div
+                      class="flex items-center p-2 border rounded-lg shadow-sm cursor-pointer hover:shadow-md"
+                    >
+                      <input
+                        id="q3-2"
+                        name="q3"
+                        class="w-6 h-6 cursor-pointer accent-pink-500"
+                        type="radio"
+                        value="พอใช้"
+                        required
+                      />
+                      <label
+                        for="q3-2"
+                        class="w-full ml-2 text-left cursor-pointer"
+                        >พอใช้</label
+                      >
+                    </div>
+                    <div
+                      class="flex items-center p-2 border rounded-lg shadow-sm cursor-pointer hover:shadow-md"
+                    >
+                      <input
+                        id="q3-1"
+                        name="q3"
+                        class="w-6 h-6 cursor-pointer accent-pink-500"
+                        type="radio"
+                        value="ควรปรับปรุง"
+                        required
+                      />
+                      <label
+                        for="q3-1"
+                        class="w-full ml-2 text-left cursor-pointer"
+                        >ควรปรับปรุง</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="mt-2 px-4 py-2 rounded-xl bg-[#f2c] text-white text-lg font-medium shadow-md"
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
           </div>
-          <div class="space-x-1 space-y-5 md:space-x-2 text-lg">
-            <p class="font-medium text-left text-xl">
-              ประสบการณ์ของผู้ใช้เว็ปไซต์
-            </p>
-            <input id="q2-5" class="w-4 h-4 accent-pink-500" type="radio" name="q2" value="5" required/> 
-            <label for="q2-5">ดีมาก</label> 
-            
-            <input id="q2-4" class="w-4 h-4 accent-pink-500" type="radio" name="q2" value="4" required/>
-            <label for="q2-4">ดี</label>
-            
-            <input id="q2-3" class="w-4 h-4 accent-pink-500" type="radio" name="q2" value="3" required/> 
-            <label for="q2-3">ปานกลาง</label>
-            
-            <input id="q2-2" class="w-4 h-4 accent-pink-500" type="radio" name="q2" value="2" required/> 
-            <label for="q2-2">พอใช้</label> 
-            
-            <input id="q2-1" class="w-4 h-4 accent-pink-500" type="radio" name="q2" value="1" required/>
-            <label for="q2-1">ควรปรับปรุง</label>
-          </div>
-          <div class="space-x-1 space-y-5 md:space-x-2 text-lg">
-            <p class="font-medium text-left text-xl">
-              ความเข้าใจของเนื้อหา
-            </p>
-            <input id="q3-5" class="w-4 h-4 accent-pink-500" type="radio" name="q3" value="5" required/> 
-            <label for="q3-5">ดีมาก</label> 
-            
-            <input id="q3-4" class="w-4 h-4 accent-pink-500" type="radio" name="q3" value="4" required/>
-            <label for="q3-4">ดี</label>
-            
-            <input id="q3-3" class="w-4 h-4 accent-pink-500" type="radio" name="q3" value="3" required/> 
-            <label for="q3-3">ปานกลาง</label>
-
-            <input id="q3-2" class="w-4 h-4 accent-pink-500" type="radio" name="q3" value="2" required/> 
-            <label for="q3-2">พอใช้</label> 
-
-            <input id="q3-1" class="w-4 h-4 accent-pink-500" type="radio" name="q3" value="1" required/>
-            <label for="q3-1">ควรปรับปรุง</label>
-          </div>
-          <button
-            id="btn"
-            class="py-2 text-black bg-white rounded-xl md:text-lg hover:text-[#f2c] font-medium"
-            type="submit"
-          >
-            Submit
-          </button>
         </div>
-      </form>
+      </div>
     </section>
     <script src="script.js"></script>
   </body>

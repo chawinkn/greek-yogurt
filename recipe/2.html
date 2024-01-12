@@ -1,33 +1,28 @@
 <!DOCTYPE html>
-
 <html lang="en" class="!scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <!-- <link
+    <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
-    /> -->
-    <link
-      href="https://api.fontshare.com/v2/css?f[]=switzer@700,400&display=swap"
-      rel="stylesheet"
     />
-    <!-- <link
-      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,400,700&display=swap"
-      rel="stylesheet"
-    /> -->
     <link rel="stylesheet" href="/style.css" />
   </head>
+
   <body>
     <nav
-      class="fixed top-0 w-full z-50 px-7 lg:px-28 py-5 bg-white/70 backdrop-blur-2xl shadow-md"
+      class="fixed top-0 z-50 w-full py-5 shadow-md px-7 lg:px-28 bg-white/80 backdrop-blur-lg"
     >
       <div class="flex items-center justify-between mx-auto font-medium">
         <div class="flex items-center space-x-4">
@@ -48,20 +43,80 @@
         </div>
       </div>
     </nav>
-    <section id="recipe" class="bg-purple-300">
-      <div class="flex items-center justify-center h-screen text-black">
-        <div class="flex flex-col max-w-md text-center md:max-w-2xl">
-          <h1 class="text-4xl font-bold">Recipe 2</h1>
-          <p class="pt-5 leading-loose md:pt-10 md:text-lg">
-            <span class="text-lg font-medium md:text-2xl">กรีกโยเกิร์ต</span>
-            คือ โยเกิร์ตประเภทหนึ่ง โดยมีส่วนประกอบหลัก คือ นม
-            และแบคทีเรียที่ดีต่อร่างกาย โดยแตกต่างกับโยเกิร์ตทั่วๆ ไป
-            โดยมีความเข้มข้นมากกว่า มีลักษณะจับกันเป็นก้อน เนื่องจากกรีกโยเกิร์ต
-            เกิดจากการกรอง และคั้นหางโยเกิร์ต ซึ่งจะกรองของเหลว และน้ำตาลออก
-            โดยกรีกโยเกิร์ตจะมีโปรตีนมากกว่าโยเกิร์ตทั่วไป
-            ทำให้กรีกโยเกิร์ตดีต่อสุขภาพมากกว่าโยเกิร์ตทั่วไป
-            หากพิจารณาสุขภาพในระยะยาว
-          </p>
+
+    <section id="home" class="bg-gradient-to-r from-pink-200 to-purple-200">
+      <div
+        class="flex flex-row items-center justify-center h-screen align-middle"
+      >
+        <div class="text-center basis-7/12">
+          <h1
+            class="text-6xl transition-all ease hover:scale-110 font-bold hover:text-[#f2c]"
+          >
+            Homemade #1
+          </h1>
+        </div>
+        <div
+          class="flex-auto h-full bg-center bg-no-repeat bg-cover bg-[url('/images/homemade1.jpg')]"
+        ></div>
+      </div>
+    </section>
+
+    <section class="bg-gradient-to-r from-purple-400 to-violet-600">
+      <div class="flex items-center justify-center min-h-screen py-14">
+        <div
+          class="flex flex-col max-w-sm space-y-8 text-center sm:max-w-lg lg:max-w-2xl"
+        >
+          <div
+            class="flex flex-col justify-center space-y-8 md:flex-row md:space-x-8 md:space-y-0"
+          >
+            <div class="py-10 bg-white shadow-md px-14 rounded-xl">
+              <h1
+                class="text-2xl font-bold transition-all ease hover:scale-110 hover:text-[#f2c]"
+              >
+                วัตถุดิบ
+              </h1>
+              <p class="mt-5 text-lg font-medium leading-loose text-left">
+                ✅ นมจืด 4 ถ้วย<br />✅ โยเกิร์ต 1/4 ถ้วย
+              </p>
+            </div>
+            <div class="py-10 bg-white shadow-md px-14 rounded-xl">
+              <h1
+                class="text-2xl font-bold transition-all ease hover:scale-110 hover:text-[#f2c]"
+              >
+                อุปกรณ์
+              </h1>
+              <p class="mt-5 text-lg font-medium leading-loose text-left">
+                ✅ ผ้าขาวบาง<br />✅ ตะแกรง<br />✅ ภาชนะรองตะแกรง<br />✅
+                ชาม<br />✅ กระทะ<br />✅ เทอร์โมมิเตอร์
+              </p>
+            </div>
+          </div>
+          <div class="py-10 bg-white shadow-md px-14 rounded-xl">
+            <h1
+              class="text-2xl font-bold transition-all ease hover:scale-110 hover:text-[#f2c]"
+            >
+              วิธีทำ
+            </h1>
+            <div class="mt-5 text-lg font-medium leading-loose text-left">
+              <h1 class="mt-2 font-bold">Step 1</h1>
+              อุ่นนมในกระทะด้วยไฟร้อนปานกลาง คนบ่อยๆ จนกระทั่งนมเดือด
+              แทบจะเป็นฟอง และอุณหภูมิอยู่ที่ประมาณ 180°F บนเทอร์โมมิเตอร์
+              <h1 class="mt-2 font-bold">Step 2</h1>
+              ค่อยๆ เทนมลงในภาชนะขนาด 5-8 ถ้วยที่สะอาดและปลอดภัยต่อความร้อน
+              พักไว้ จนกระทั่งเย็นลงถึง 110°F ผสมโยเกิร์ตกับนม 110°F 1/2
+              ถ้วยในชามขนาดเล็ก จากนั้นคนส่วนผสมกลับเข้าไปในนมอุ่น
+              <h1 class="mt-2 font-bold">Step 3</h1>
+              ปิดฝาภาชนะแล้วห่อด้วยผ้าสะอาด
+              วางในที่ที่อบอุ่นและปล่อยทิ้งไว้อย่างน้อย 8 ชั่วโมงและสูงสุด 12
+              ชั่วโมง แช่เย็นจนเย็นประมาณ 2 ชั่วโมง
+              โยเกิร์ตจะข้นขึ้นอีกเล็กน้อยในตู้เย็น
+              <h1 class="mt-2 font-bold">Step 4</h1>
+              วางตะแกรงตาข่ายละเอียดขนาดใหญ่ด้วยผ้าขาวม้า 2 ชั้น
+              แล้ววางลงบนชามใบใหญ่ ตักโยเกิร์ตที่แช่เย็นแล้วลงในผ้าขาวบาง
+              จากนั้นปิดฝาและแช่เย็นเป็นเวลา 8-24 ชั่วโมง
+              ขึ้นอยู่กับว่าคุณต้องการความข้นแค่ไหน
+            </div>
+          </div>
         </div>
       </div>
     </section>

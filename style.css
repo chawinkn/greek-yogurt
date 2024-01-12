@@ -1,22 +1,13 @@
 * {
-font-family: "Inter", "Noto Sans Thai", sans-serif;
+  font-family: "Inter", "Noto Sans Thai", sans-serif;
 }
 
-::selection {
-  background-color: white;
-}
-
-.glass {
-  background: linear-gradient(
-      180deg,
-      hsla(0, 0%, 100%, 0.1),
-      hsla(0, 0%, 100%, 0)
-    ),
-    hsla(0, 0%, 100%, 0.2);
-}
-
-.bg-yogurt-mid {
-  background-image: url("/images/yogurt-mid.jpg");
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .link-underline {
